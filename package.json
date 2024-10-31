@@ -6,10 +6,19 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
+    "@mikro-orm/core": "^6.3.13",
+    "@mikro-orm/mysql": "^6.3.13",
+    "@mikro-orm/reflection": "^6.3.13",
+    "@mikro-orm/sql-highlighter": "^1.0.1",
     "elysia": "latest"
   },
   "devDependencies": {
+    "@mikro-orm/cli": "^6.3.13",
     "bun-types": "latest"
   },
-  "module": "src/index.js"
+  "module": "src/index.js",
+  "type": "module",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
 }
