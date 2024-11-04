@@ -27,6 +27,12 @@
       "@routes/*": [
         "./src/routes/*"
       ],
+      "@customTypes/*": [
+        "./src/types/*"
+      ],
+      "@src/*": [
+        "./src/*"
+      ]
     }
   }
 }
