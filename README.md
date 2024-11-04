@@ -23,25 +23,23 @@ project leverages Elysia for request validation and Mikro-ORM for database manag
 ### Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/VarcosMinicios/crud-users.git
-   cd crud-users
+
+```bash
+git clone https://github.com/VarcosMinicios/users-crud.git
+cd users-crud
+```
 
 Install dependencies:
 
 ```bash
-
 bun install
-
 ```
 
 Running the Project
 To start the development server, run:
 
 ```bash
-
 bun run dev
-
 ```
 
 The server will run at http://localhost:3000.
