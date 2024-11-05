@@ -1,6 +1,7 @@
 import { wrap } from '@mikro-orm/core';
 
-import type { CreateUser, User } from '@src/types/users/user.types';
+import type { CreateUser } from '@dtos/users';
+import type { User } from '@src/types/users/user.types';
 import { db } from '@src/index';
 
 export class UserRepository {
@@ -15,11 +16,11 @@ export class UserRepository {
     return db.user.findAll();
   }
 
-  public async find(id: number): Promise<User | null> {
+  public async find(id: number): Promise<User> {
     return db.user.findOneOrFail(id);
   }
 
-  public async findByEmail(email: string): Promise<User | null> {
+  public async findByEmail(email: string): Promise<User> {
     return db.user.findOneOrFail({ email });
   }
 

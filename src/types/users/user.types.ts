@@ -1,6 +1,5 @@
-export type CreateUser = Omit<User, 'created_at' | 'updated_at'>;
-
 export interface User {
+  id: number;
   name: string;
   email: string;
   password?: string;
